@@ -2,14 +2,6 @@ import streamlit as st
 from load_css import local_css
 
 
-def play_video(file_name):
-    try:
-        with open(file_name, "rb") as file:
-            video_bytes = file.read()
-        st.video(video_bytes, format="video/mp4", start_time=0)
-    except FileNotFoundError:
-        st.error(f"Local video file '{file_name}' not found.")
-
 st.set_page_config(
     page_title='Opening Jupyter Notebooks',
     page_icon='📙'
@@ -39,12 +31,6 @@ work with the jupyter notebooks.
 5. Read through the description about the workshops/scroll down to the first exercise.
 6. Type in your solution code in the code cell and run the code with the Cmd+Enter (Mac) or Ctrl+Enter (Win) keyboard shortcut.
 """)
-
-vs_code_jupyter_notebooks_video = "screen_rec/both/vs_code_jupyter_notebooks.mp4" 
-
-play_video(vs_code_jupyter_notebooks_video)
-
-
 
 
 st.markdown(
