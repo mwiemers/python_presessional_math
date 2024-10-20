@@ -36,7 +36,7 @@ st.markdown(
     """
 ### Next step
 
-Go to the Pre-sessional workshops section to 
+Go to the DSL Python workshops section to 
 learn about the format of the Python workshops and how to sign up for a session.
 """
 )
