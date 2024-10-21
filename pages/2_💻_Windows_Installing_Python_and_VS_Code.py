@@ -42,7 +42,7 @@ st.markdown(
     """
 ### Installing Miniconda
 
-Download and run [this file](https://docs.anaconda.com/miniconda/#miniconda-latest-installer-links).
+Download and run [this file](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).
 
 During the installation, when being asked, tick the option to **add Miniconda3 to the my PATH environemt variable**.
 """)        
