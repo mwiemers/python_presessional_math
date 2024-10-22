@@ -1,4 +1,7 @@
 import streamlit as st
+import requests
+from PIL import Image
+from io import BytesIO
 from load_css import local_css
 
 
@@ -26,11 +29,59 @@ st.markdown(
 1. Open the VS Code app.
 2. Open the PF_notebooks folder, which contains the different jupyter notebook files. Go to Files > Open Folder and the select the folder.
 3. Click on the first jupyter notebook to open it.
-4. Select the kernel. The kernel is the specific Python environment to use. We set up the py312 environment with Python 3.12 in a previous step and will use this to 
-work with the jupyter notebooks.
-5. Read through the description about the workshops/scroll down to the first exercise.
-6. Type in your solution code in the code cell and run the code with the Cmd+Enter (Mac) or Ctrl+Enter (Win) keyboard shortcut.
+4. Select the kernel, which is the Python version by clicking on the **Select Kernel** button.
 """)
+
+st.image("img/select_kernel_01.png")
+
+st.markdown(
+    """
+5. Select **Python Environments...**
+""")
+
+st.image("img/select_kernel_02.png")
+
+st.markdown(
+    """
+5. Select the **base** environment.
+""")
+
+st.image("img/select_kernel_03.png")
+
+st.markdown(
+    """
+6. Scroll down to the first ask and hit the Run button next to the code cell. This button is used to execute the code inside a code cell.
+""")
+
+st.image("img/install_jupyter_01.png")
+
+st.markdown(
+    """
+7. VS Code will prompt you to install the jupyter libraries. Select Install
+""")
+
+st.image("img/install_jupyter_02.png", width=200)
+
+st.markdown(
+    """
+    A pop up window will appear in the lower-right corner of the VS Code app. Wait until the installation has been completed.
+""")
+
+st.image("img/install_jupyter_03.png", width=400)
+
+
+st.markdown(
+    """
+
+    &nbsp;
+    &nbsp;
+
+    You are all set to use jupyter notebooks in VS Code now. Please remember, that you will have to select the kernel and chose the base environment every time you open a jupyter notebook.
+
+    &nbsp;
+""")
+
+
 
 st.markdown(
     """
